@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAOBA & CUERO </title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="logo">
+          <img src="logoIn.png" alt="Logo Cuero y Estilo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="nav-item active" data-target="inicio">Inicio</a></li>
+            <li><a href="#" class="nav-item" data-target="productos">Productos</a></li>
+            <li><a href="#" class="nav-item" data-target="beneficios">Beneficios</a></li>
+            <li><a href="#" class="nav-item" data-target="contacto">Contacto</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section id="inicio" class="tab-content active-tab">
+        <header id="hero-slider">
+            
+            <div class="slide active">
+                <div class="hero-content fade-in">
+                    <h1>Elegancia Atemporal</h1>
+                    <p>El cuero genuino que define tu carácter.</p>
+                    <button class="btn-primary nav-trigger" data-target="productos">Ver Colección</button>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="hero-content fade-in">
+                    <h1>Correas de Autor</h1>
+                    <p>Detalles hechos a mano para un ajuste perfecto.</p>
+                    <button class="btn-primary nav-trigger" data-target="productos">Ver Correas</button>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="hero-content fade-in">
+                    <h1>Billeteras Minimalistas</h1>
+                    <p>Diseño compacto sin sacrificar capacidad.</p>
+                    <button class="btn-primary nav-trigger" data-target="productos">Ver Billeteras</button>
+                </div>
+            </div>
+
+            <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+
+        </header>
+    </section>
+
+    <section id="productos" class="section tab-content">
+        <div class="container">
+            <h2 class="section-title">Nuestra Colección</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="ImagenBilletera.jpg" alt="Billetera de cuero">
+                    </div>
+                    <div class="product-info">
+                        <h3>Billetera Red Velvet</h3>
+                        <p>Diseño minimalista.</p>
+                        <span class="price">$50.000</span>
+                        <button class="btn-secondary">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="ImagenPrueba.jpg" alt="Correa de cuero">
+                    </div>
+                    <div class="product-info">
+                        <h3>Correa Executive</h3>
+                        <p>Hebilla de acero, acabado azul.</p>
+                        <span class="price">$60.000</span>
+                        <button class="btn-secondary">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="ImagenCombo.png" alt="Set de regalo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Set Caballero</h3>
+                        <p>Combo billetera y correa de cuero.</p>
+                        <span class="price">$90.000</span>
+                        <button class="btn-secondary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="section dark-bg tab-content">
+        <div class="container">
+            <h2 class="section-title">¿Por qué elegirnos?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-gem"></i>
+                    <h3>Calidad Premium</h3>
+                    <p>Seleccionamos el mejor cuero de grano completo para garantizar durabilidad y belleza.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Hecho a Mano</h3>
+                    <p>Cada pieza es ensamblada y cosida a mano por medio de conocimiento y años de experiencia.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Envío Seguro</h3>
+                    <p>Tu pedido llega en un empaque de lujo, protegido y listo para un regalo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section tab-content">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-wrapper">
+                <form class="contact-form">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo Electrónico" required>
+                    <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Visítanos</h3>
+                    <p>Bogotá Distritp Capital, CP 111000</p>
+                    <p>info@caoba&cuero.com</p>
+                    <p>+57 123 4567890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Caoba & Cuero. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
