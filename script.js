@@ -94,13 +94,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- 3. MENÚ MOBILE (Placeholder básico) ---
+    // --- 3. MENÚ MOBILE (Funcional) ---
     const menuToggle = document.querySelector('.menu-toggle');
+    const navLinksContainer = document.querySelector('.nav-links');
+
     if(menuToggle) {
         menuToggle.addEventListener('click', () => {
-           // Aquí podrías alternar una clase 'show' en .nav-links
-           // Para este ejemplo, mostramos una alerta o podrías expandir el menú
-           alert('Menú móvil: Implementar expansión aquí');
+           // Alternar la clase 'active' muestra u oculta el menú
+           navLinksContainer.classList.toggle('active');
         });
     }
+
+    // EXTRA: Cerrar el menú automáticamente al hacer clic en una opción
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            if (window.innerWidth < 768) { // Solo en móviles
+                navLinksContainer.classList.remove('active');
+            }
+        });
+    });
 });

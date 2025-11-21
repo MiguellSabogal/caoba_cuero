@@ -371,10 +371,37 @@ footer {
     margin-top: auto;
 }
 
-/* Responsive Mobile */
 @media (max-width: 768px) {
-    .nav-links { display: none; }
-    .menu-toggle { display: block; }
-    .hero-content h1 { font-size: 2.5rem; }
-    .section-title { font-size: 2rem; }
+    .menu-toggle {
+        display: block; /* Muestra el botón de hamburguesa */
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none; /* Oculto por defecto */
+        position: absolute;
+        top: 100%; /* Justo debajo de la barra */
+        left: 0;
+        width: 100%;
+        background-color: rgba(26, 26, 26, 0.98); /* Fondo oscuro casi sólido */
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        border-top: 1px solid #333;
+    }
+
+    /* Esta clase se agrega con JS para mostrar el menú */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1.5rem 0; /* Espacio entre opciones */
+        margin-left: 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
 }
